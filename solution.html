@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error Solution</title>
+<style>
+    #myDiv { display: block;}
+</style>
+</head>
+<body>
+  <div id="myDiv">
+    This text will be visible even if JavaScript is disabled or fails to load.
+  </div>
+
+  <script>
+    window.onload = function() {
+        if (document.getElementById("myDiv")) {
+            document.getElementById("myDiv").style.display = "none";
+        }
+    }
+  </script>
+</body>
+</html>

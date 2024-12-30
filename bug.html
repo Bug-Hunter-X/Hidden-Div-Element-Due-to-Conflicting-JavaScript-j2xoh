@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text will not be visible if JavaScript is disabled.
+  </div>
+
+  <script>
+    document.getElementById("myDiv").style.display = "none";
+    //This will hide the div even if JavaScript is enabled
+  </script>
+</body>
+</html>
